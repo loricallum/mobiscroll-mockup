@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <div id="demo-work-order-scheduling"></div>
+
+    <div id="demo-work-order-popup">
+      <div class="mbsc-form-group">
+        <label>
+          Title
+          <input mbsc-input id="work-order-title" />
+        </label>
+        <label>
+          Location
+          <input mbsc-input id="work-order-location" />
+        </label>
+        <label>
+          Bill to customer ($)
+          <input mbsc-input id="work-order-bill" />
+        </label>
+        <label>
+          Notes
+          <textarea mbsc-textarea id="work-order-notes"></textarea>
+        </label>
+      </div>
+      <div class="mbsc-form-group">
+        <label>
+          Starts
+          <input mbsc-input id="work-order-start" />
+        </label>
+        <label>
+          Ends
+          <input mbsc-input id="work-order-end" />
+        </label>
+        <div id="work-order-date"></div>
+      </div>
+      <div id="work-order-resources" class="mbsc-form-group"></div>
+
+      <div class="mbsc-button-group">
+        <button
+          class="mbsc-button-block"
+          id="work-order-delete"
+          mbsc-button
+          data-color="danger"
+          data-variant="outline"
+        >
+          Delete work order
+        </button>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
